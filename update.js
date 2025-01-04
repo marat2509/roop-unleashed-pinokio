@@ -7,8 +7,11 @@ module.exports = {
   }, {
     method: "shell.run",
     params: {
+      venv: "env",
       path: "app",
-      message: "git pull"
+      message: [
+        "pip install -r requirements.txt"
+      ]
     }
   }]
 }

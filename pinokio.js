@@ -1,6 +1,6 @@
 const path = require('path')
 module.exports = {
-  version: "2.0",
+  version: "3.0",
   title: "roop-unleashed",
   description: "Uncensored Deepfakes for images and videos without training and an easy-to-use GUI.",
   icon: "icon.png",
