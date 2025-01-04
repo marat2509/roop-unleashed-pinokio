@@ -6,7 +6,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.5.1+cu124 torchvision==0.20.1+cu124 {{args && args.xformers ? 'xformers' : ''}} --index-url https://download.pytorch.org/whl/cu124"
+        "message": "pip install onnxruntime-gpu torch==2.5.1+cu124 torchvision==0.20.1+cu124 {{args && args.xformers ? 'xformers' : ''}} --index-url https://download.pytorch.org/whl/cu124"
       }
     },
     // windows amd
@@ -16,7 +16,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.4.1+cu124 torch-directml==0.2.5.dev240914 torchvision==1.20.1 numpy==1.26.4"
+        "message": "pip install onnxruntime torch torch-directml torchvision numpy==1.26.4"
       }
     },
     // windows cpu
@@ -26,7 +26,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu"
+        "message": "pip install onnxruntime torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu"
       }
     },
     // mac
@@ -36,7 +36,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.5.1 torchvision==0.20.1"
+        "message": "pip install onnxruntime torch==2.5.1 torchvision==0.20.1"
       }
     },
     // linux nvidia
@@ -46,7 +46,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.5.1+cu124 torchvision==0.20.1 {{args && args.xformers ? 'xformers' : ''}} --index-url https://download.pytorch.org/whl/cu124"
+        "message": "pip install onnxruntime-gpu torch==2.5.1+cu124 torchvision==0.20.1 {{args && args.xformers ? 'xformers' : ''}} --index-url https://download.pytorch.org/whl/cu124"
       }
     },
     // linux rocm (amd)
@@ -56,7 +56,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/rocm6.2"
+        "message": "pip install onnxruntime torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/rocm6.2"
       }
     },
     // linux cpu
@@ -66,7 +66,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu"
+        "message": "pip install onnxruntime torch==2.5.1 torchvision==0.20.1 --index-url https://download.pytorch.org/whl/cpu"
       }
     }
   ]
