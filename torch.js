@@ -16,7 +16,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install torch==2.4.1 torch-directml==0.2.5.dev240914 torchvision==0.20.1 numpy==1.26.4"
+        "message": "pip install torch==2.4.1 torch-directml==0.2.5.dev240914 torchvision==0.19.1 numpy==1.26.4"
       }
     },
     // windows cpu
