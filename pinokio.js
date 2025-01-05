@@ -5,7 +5,7 @@ module.exports = {
   description: "Uncensored Deepfakes for images and videos without training and an easy-to-use GUI.",
   icon: "icon.png",
   menu: async (kernel, info) => {
-    let installed = info.exists("app/env")
+    let installed = info.exists("env")
     let running = {
       install: info.running("install.js"),
       start: info.running("start.js"),

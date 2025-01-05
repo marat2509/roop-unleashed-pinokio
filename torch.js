@@ -16,7 +16,7 @@ module.exports = {
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
-        "message": "pip install onnxruntime torch torch-directml torchvision numpy==1.26.4"
+        "message": "pip install onnxruntime-directml torch torch-directml torchvision numpy==1.26.4"
       }
     },
     // windows cpu

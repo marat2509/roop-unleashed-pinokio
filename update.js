@@ -1,6 +1,7 @@
 module.exports = {
   run: [{
     method: "shell.run",
+    path: "app",
     params: {
       message: [
         "git fetch",

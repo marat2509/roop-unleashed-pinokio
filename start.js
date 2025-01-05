@@ -6,9 +6,8 @@ module.exports = {
       params: {
         venv: "env",
         env: { },
-        path: "app",
         message: [
-          "python run.py",
+          "python -c \"import os; os.chdir('app')\" && python run.py",
         ],
         on: [{
           "event": "/http:\/\/\\S+/",   
