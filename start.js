@@ -7,7 +7,7 @@ module.exports = {
         venv: "env",
         env: { },
         message: [
-          "python -c \"import os; os.chdir('app')\" && python run.py",
+          "python -c \"import os; os.chdir('app'); from roop import core; core.run()\"",
         ],
         on: [{
           "event": "/http:\/\/\\S+/",   
