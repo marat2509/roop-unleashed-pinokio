@@ -1,8 +1,16 @@
 module.exports = {
   run: [{
     method: "shell.run",
-    path: "app",
     params: {
+      message: [
+        "git fetch",
+        "git reset --hard origin/main"
+      ]
+    }
+  }, {
+    method: "shell.run",
+    params: {
+      path: "app",
       message: [
         "git fetch",
         "git reset --hard origin/main"
