@@ -31,12 +31,22 @@ module.exports = {
     },
     // mac
     {
-      "when": "{{platform === 'darwin'}}",
+      "when": "{{platform === 'darwin' && arch !== 'arm64'}}",
       "method": "shell.run",
       "params": {
         "venv": "{{args && args.venv ? args.venv : null}}",
         "path": "{{args && args.path ? args.path : '.'}}",
         "message": "pip install onnxruntime torch==2.5.1 torchvision==0.20.1"
+      }
+    },
+    // mac arm64
+    {
+      "when": "{{platform === 'darwin' && arch === 'arm64'}}",
+      "method": "shell.run",
+      "params": {
+        "venv": "{{args && args.venv ? args.venv : null}}",
+        "path": "{{args && args.path ? args.path : '.'}}",
+        "message": "pip install onnxruntime-silicon==1.16.3 torch==2.5.1 torchvision==0.20.1"
       }
     },
     // linux nvidia
