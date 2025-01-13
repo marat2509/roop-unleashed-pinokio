@@ -19,7 +19,7 @@ module.exports = {
   }, {
     method: "script.start",
     params: {
-      uri: "torch.js",
+      uri: "install.js",
       params: {
         venv: "env",
       }
