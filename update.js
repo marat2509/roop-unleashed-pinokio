@@ -20,9 +20,6 @@ module.exports = {
     method: "script.start",
     params: {
       uri: "install.js",
-      params: {
-        venv: "env",
-      }
     }
   },]
 }
